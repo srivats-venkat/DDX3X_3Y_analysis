@@ -29,8 +29,8 @@ library("biomaRt")
 library("tidytree")
 library("ggtree")
 
-setwd("/Users/srivatsv/Box Sync/PostDoc Stephen Floor Lab/Venkataramanan et al. DDX3X_3Y paper 2020/DDX3X_DDX3Y_manuscript_FloorLab_forGitHub/msa_phylotree/")
-load_annotation("/Users/srivatsv/Box Sync/PostDoc Stephen Floor Lab/annotations/Homo.sapiens/gencode.v33.primary_assembly.annotation.gtf_Rannot")
+setwd(".")
+load_annotation("./gencode.v33.primary_assembly.annotation.gtf_Rannot")
 
 
 DDX3_XY_humanonly_refseq_protein <- readAAStringSet(filepath = "./DDX3_XY_humanonly_refseq_protein.fasta", format = "fasta")
